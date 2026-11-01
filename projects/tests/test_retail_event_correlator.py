@@ -101,5 +101,26 @@ class CorrelatorTests(unittest.TestCase):
         self.assertEqual(first.candidate_id, second.candidate_id)
 
 
+    def test_rejects_non_finite_or_non_positive_window_sizes(self):
+        for window in (0, -1, float("inf"), float("nan")):
+            with self.subTest(window=window):
+                with self.assertRaisesRegex(ValueError, "finite value greater than zero"):
+                    correlate_window([], max_window_seconds=window)
+
+    def test_rejects_unknown_event_type_values(self):
+        with self.assertRaisesRegex(ValueError, "EventType"):
+            SensorEvent(
+                event_id="unknown-type",
+                event_type="unrecognized",
+                occurred_at=self.start,
+                zone="aisle-4",
+                source_id="sensor-1",
+            )
+
+    def test_candidate_requires_timezone_and_signal_provenance(self):
+        event = self.event("v-1", EventType.VISION_ACTIVITY)
+        self.assertEqual(event.source_id, "sensor-v-1")
+
+
 if __name__ == "__main__":
     unittest.main()
