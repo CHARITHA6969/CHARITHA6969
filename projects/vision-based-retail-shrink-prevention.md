@@ -134,7 +134,7 @@ A small standard-library Python prototype implements a single-window event corre
 Run the example from the repository root:
 
 ```bash
-python projects/retail_event_demo.py
+python -m projects.retail_event_demo
 ```
 
 Run its tests:
