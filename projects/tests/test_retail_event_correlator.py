@@ -117,9 +117,11 @@ class CorrelatorTests(unittest.TestCase):
                 source_id="sensor-1",
             )
 
-    def test_candidate_requires_timezone_and_signal_provenance(self):
-        event = self.event("v-1", EventType.VISION_ACTIVITY)
-        self.assertEqual(event.source_id, "sensor-v-1")
+    def test_event_requires_zone_and_source_provenance(self):
+        with self.assertRaisesRegex(ValueError, "zone must not be empty"):
+            SensorEvent("no-zone", EventType.VISION_ACTIVITY, self.start, " ", "camera-1")
+        with self.assertRaisesRegex(ValueError, "source_id must not be empty"):
+            SensorEvent("no-source", EventType.VISION_ACTIVITY, self.start, "aisle-4", " ")
 
 
 if __name__ == "__main__":
