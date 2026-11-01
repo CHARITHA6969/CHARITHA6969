@@ -30,9 +30,11 @@ A React application exploring instructor and student workflows around assignment
 
 - Instructor-facing dashboard concepts for assignments, rubric criteria, and submission review.
 - Student-facing views for grades, score breakdowns, and feedback.
-- An early AI-assisted review flow that is being developed and needs stronger backend integration, validation, and evaluation before production use.
+- A demo review flow that refuses to invent a grade when no submission evidence is attached.
+- A standalone rubric-score validation utility with unit tests for score bounds, duplicate criteria, and total-point consistency.
+- GitHub Actions CI configured to run tests and a production build.
 
-**Engineering focus:** React component design, role-oriented user flows, rubric representation, API integration, and responsible AI-assisted feedback.
+**Engineering focus:** React component design, rubric validation, evidence-first review behavior, unit testing, and CI. The app remains a frontend prototype without real authentication, persistent submissions, or a grading backend.
 
 ### [Neurotrial](https://github.com/CHARITHA6969/neurotrial)
 **Neuroscience clinical-trial intelligence interface**
@@ -42,9 +44,12 @@ A React prototype for exploring how LLMs can help researchers inspect and reason
 - Trial parsing and structured summaries.
 - Side-by-side trial comparison.
 - Failure analysis and hypothesis exploration.
-- Sample trial records and an experimental Claude API integration.
+- Explicitly synthetic demonstration scenarios (not real clinical-trial evidence).
+- Data-provenance and research-integrity documentation.
+- Security documentation describing why browser-side API keys are unsuitable for production.
+- More defensive provider response and request validation.
 
-**Engineering focus:** structured LLM outputs, evidence-aware analysis, scientific caution, and researcher-oriented workflows. The current prototype uses sample data and requires a secure server-side API layer before handling sensitive or real research data.
+**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data.
 
 ## Technical toolkit
 
