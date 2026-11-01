@@ -51,7 +51,7 @@ A React prototype for exploring how LLMs can help researchers inspect and reason
 - Security documentation describing why browser-side API keys are unsuitable for production.
 - Shared defensive JSON-object parsing for model responses.
 - Automated tests for malformed output, fenced JSON, missing inputs, provider errors, and content extraction.
-- GitHub Actions CI: JSON parsing/provider tests and production build passing..
+- GitHub Actions CI: JSON parsing/provider tests and production build passing.
 
 **Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data. Its test/build CI workflow now passes in GitHub Actions.
 
