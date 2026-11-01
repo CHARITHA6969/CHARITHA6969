@@ -16,9 +16,9 @@ My current interests are LLM-powered applications, retrieval-augmented generatio
 | Area | What I'm interested in building |
 |---|---|
 | **Applied AI & LLMs** | RAG pipelines, document intelligence, AI agents, structured outputs, evaluation, and human-in-the-loop workflows |
-| **ML engineering** | Model development, inference optimization, quantization, model serving, and reproducible experiments |
+| **ML & Edge AI engineering** | Model development, inference optimization, quantization, edge deployment, real-time computer vision, and reproducible experiments |
 | **Backend systems** | Python services, REST APIs, asynchronous jobs, validation, error handling, and reliable data flows |
-| **Cloud & platform engineering** | Containerized applications, deployment automation, observability, and scalable infrastructure |
+| **Edge, cloud & platform engineering** | Edge inference, device-to-cloud workflows, containerized services, deployment automation, observability, and scalable infrastructure |
 | **Data engineering** | Data preparation, exploratory analysis, SQL, embeddings, and vector search |
 
 ## Selected projects
@@ -101,7 +101,7 @@ Applied model-serving and optimization work focused on improving inference effic
 Python · JavaScript · SQL · Java · C/C++
 
 **AI / Machine Learning**  
-PyTorch · TensorFlow · scikit-learn · Hugging Face · LangChain · RAG · Embeddings · LLM evaluation
+PyTorch · TensorFlow · scikit-learn · Hugging Face · LangChain · RAG · Embeddings · LLM evaluation · Computer Vision
 
 **Backend & APIs**  
 FastAPI · Node.js · REST APIs · asynchronous workflows
@@ -110,7 +110,7 @@ FastAPI · Node.js · REST APIs · asynchronous workflows
 Pandas · NumPy · FAISS · vector databases · data preprocessing
 
 **Cloud & DevOps**  
-AWS · Azure · Docker · Kubernetes · Terraform · GitHub Actions
+AWS · Azure · Docker · Kubernetes · Terraform · GitHub Actions · TensorRT · OpenVINO
 
 **Engineering Practices**  
 Git · testing · CI/CD · Linux · API design · debugging · documentation
