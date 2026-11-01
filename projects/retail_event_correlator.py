@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 from dataclasses import asdict, dataclass
 from datetime import datetime, timedelta, timezone
 from enum import Enum
@@ -38,15 +39,21 @@ class SensorEvent:
     confidence: float | None = None
 
     def __post_init__(self) -> None:
-        if not self.event_id.strip():
+        if not isinstance(self.event_id, str) or not self.event_id.strip():
             raise ValueError("event_id must not be empty")
-        if not self.zone.strip():
+        if not isinstance(self.zone, str) or not self.zone.strip():
             raise ValueError("zone must not be empty")
-        if not self.source_id.strip():
+        if not isinstance(self.source_id, str) or not self.source_id.strip():
             raise ValueError("source_id must not be empty")
+        if not isinstance(self.event_type, EventType):
+            raise ValueError("event_type must be an EventType value")
+        if not isinstance(self.occurred_at, datetime):
+            raise ValueError("occurred_at must be a datetime")
         if self.occurred_at.tzinfo is None or self.occurred_at.utcoffset() is None:
             raise ValueError("occurred_at must be timezone-aware")
-        if self.confidence is not None and not 0.0 <= self.confidence <= 1.0:
+        if self.confidence is not None and (
+            not math.isfinite(self.confidence) or not 0.0 <= self.confidence <= 1.0
+        ):
             raise ValueError("confidence must be between 0 and 1")
 
 
@@ -77,8 +84,8 @@ def correlate_window(
     Duplicate event IDs with identical payloads are ignored. Conflicting payloads
     for the same ID are rejected to avoid silently corrupting the event history.
     """
-    if max_window_seconds <= 0:
-        raise ValueError("max_window_seconds must be greater than zero")
+    if not math.isfinite(max_window_seconds) or max_window_seconds <= 0:
+        raise ValueError("max_window_seconds must be a finite value greater than zero")
 
     unique_events: dict[str, SensorEvent] = {}
     for event in events:
