@@ -17,6 +17,7 @@ I build practical software around AI-assisted workflows, document intelligence, 
 
 [![GradeFlow CI](https://github.com/CHARITHA6969/gradeflow/actions/workflows/gradeflow-ci.yml/badge.svg)](https://github.com/CHARITHA6969/gradeflow/actions/workflows/gradeflow-ci.yml)
 [![Neurotrial CI](https://github.com/CHARITHA6969/neurotrial/actions/workflows/neurotrial-ci.yml/badge.svg)](https://github.com/CHARITHA6969/neurotrial/actions/workflows/neurotrial-ci.yml)
+[![Edge AI prototype tests](https://github.com/CHARITHA6969/CHARITHA6969/actions/workflows/project-tests.yml/badge.svg)](https://github.com/CHARITHA6969/CHARITHA6969/actions/workflows/project-tests.yml)
 
 The Edge AI case study includes a [synthetic event correlator](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/retail_event_correlator.py), [runnable demo](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/retail_event_demo.py), and [unit tests](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/tests/test_retail_event_correlator.py). Its GitHub Actions workflow runs the tests on project changes.
 
