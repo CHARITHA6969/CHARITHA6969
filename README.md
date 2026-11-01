@@ -70,13 +70,31 @@ An applied LLM workflow concept for extracting and answering questions over ente
 - **Status:** Portfolio project experience; the public GradeFlow and Neurotrial repositories are separate implementations.
 
 ### Vision-Based Retail Shrink Prevention
-**Edge AI and computer vision for retail operations**
+**Edge AI + multimodal sensor-fusion platform for retail loss prevention**
 
-A proposed edge-intelligence platform for identifying potential retail shrink patterns by combining visual signals with contextual sensor data.
+An architecture for a real-time retail perception and decision-support platform designed to help identify potential inventory loss, checkout discrepancies, and operational exceptions in large-format and warehouse-style stores. It combines on-device computer vision with contextual store signals to prioritize events for human review while minimizing friction for customers and employees.
 
-- **Technical areas:** computer vision, edge AI, sensor fusion, behavioral analytics, event processing.
-- **Engineering focus:** low-latency inference, privacy-aware event design, false-positive reduction, and operational alert workflows.
-- **Status:** Architecture / project concept; not represented as a deployed customer system.
+**Perception and edge inference**
+- Process RGB and depth-camera streams near their source to reduce round-trip latency and avoid sending every raw frame to the cloud.
+- Apply object detection, multi-object tracking, pose/activity recognition, and product recognition where suitable for the deployment environment.
+- Optimize models for edge hardware through quantization, hardware-aware runtimes such as TensorRT and OpenVINO, and measured throughput/memory profiling.
+- Use event-driven processing to forward compact detections and relevant evidence instead of continuously streaming all video upstream.
+
+**Multimodal sensor fusion**
+- Correlate visual events with shelf/weight sensors, RFID, point-of-sale (POS) events, and entry/exit signals using timestamp alignment and confidence-aware association.
+- Combine product movement, checkout state, and inventory context to identify mismatches that deserve human review.
+- Preserve event metadata, source timestamps, model/version information, and confidence scores for traceability.
+
+**Decision and operations layer**
+- Prioritize alerts for potential self-checkout discrepancies, shelf/inventory anomalies, and unusual return or transaction patterns.
+- Provide an incident dashboard, event summaries, permitted video snippets, and operational analytics.
+- Keep human review and escalation in the workflow: model predictions are signals for investigation, not proof of theft or misconduct.
+
+**Technical areas:** Python, computer vision, edge inference, model quantization, TensorRT / OpenVINO, object detection, multi-object tracking, sensor synchronization, sensor fusion, behavioral analytics, event processing, REST APIs, and cloud-edge architecture.
+
+**Engineering priorities:** low-latency inference, robustness across camera conditions, false-positive measurement, privacy-by-design, data minimization, secure device management, graceful offline operation, and measurable operational outcomes.
+
+**Status:** Architecture and project concept. It is not represented as deployed or validated in a live retail environment; target hardware, datasets, model benchmarks, and field evaluation remain to be established.
 
 ### Second Nature Brands — ML Inference Optimization
 **Efficient model serving and runtime performance**
