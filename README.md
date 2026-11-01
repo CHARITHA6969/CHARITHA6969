@@ -12,11 +12,13 @@ I build practical software around AI-assisted workflows, document intelligence, 
 |---|---|---|
 | [**GradeFlow**](https://github.com/CHARITHA6969/gradeflow) | React + FastAPI assessment workflow with role-based access, assignment publishing, student submissions, and rubric validation ([architecture](https://github.com/CHARITHA6969/gradeflow/blob/main/docs/ARCHITECTURE.md)) | Active prototype |
 | [**Neurotrial**](https://github.com/CHARITHA6969/neurotrial) | Research-document ingestion, BM25-style retrieval, and source-label validation ([architecture](https://github.com/CHARITHA6969/neurotrial/blob/main/docs/architecture.md)) | Active prototype |
-| [**Edge AI Retail Case Study**](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/vision-based-retail-shrink-prevention.md) | Camera, RFID, POS, and shelf-sensor event correlation with human-reviewed incident triage | Architecture concept |
+| [**Edge AI Retail Case Study**](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/vision-based-retail-shrink-prevention.md) | Camera, RFID, and shelf-sensor event correlation; includes a runnable synthetic Python prototype and tests | Prototype + architecture concept |
 | [**Portfolio**](https://charitha6969.github.io/charithapittala.github.io/) | Project notes, technical focus, and selected engineering work | Published |
 
 [![GradeFlow CI](https://github.com/CHARITHA6969/gradeflow/actions/workflows/gradeflow-ci.yml/badge.svg)](https://github.com/CHARITHA6969/gradeflow/actions/workflows/gradeflow-ci.yml)
 [![Neurotrial CI](https://github.com/CHARITHA6969/neurotrial/actions/workflows/neurotrial-ci.yml/badge.svg)](https://github.com/CHARITHA6969/neurotrial/actions/workflows/neurotrial-ci.yml)
+
+The Edge AI case study includes a [synthetic event correlator](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/retail_event_correlator.py), [runnable demo](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/retail_event_demo.py), and [unit tests](https://github.com/CHARITHA6969/CHARITHA6969/blob/main/projects/tests/test_retail_event_correlator.py). Its GitHub Actions workflow runs the tests on project changes.
 
 ## Technical interests
 
