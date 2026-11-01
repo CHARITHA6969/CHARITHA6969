@@ -36,7 +36,7 @@ A React + FastAPI application exploring instructor and student workflows around 
 - GitHub Actions frontend CI: tests and production build passing.
 - GitHub Actions backend CI: pytest API suite passing.
 
-**Engineering focus:** React component design, rubric validation, evidence-first review behavior, unit testing, and CI. The backend is an early foundation without authentication, database persistence, or AI grading; the review interface remains a demo.
+**Engineering focus:** React component design, rubric validation, evidence-first review behavior, unit testing, and CI. The backend now includes SQLAlchemy persistence, PostgreSQL configuration, Alembic migrations, and assignment endpoints; authentication and submission workflows remain future work.
 
 ### [Neurotrial](https://github.com/CHARITHA6969/neurotrial)
 **Neuroscience clinical-trial intelligence interface**
@@ -53,7 +53,43 @@ A React prototype for exploring how LLMs can help researchers inspect and reason
 - Automated tests for malformed output, fenced JSON, missing inputs, provider errors, and content extraction.
 - GitHub Actions CI: JSON parsing/provider tests and production build passing.
 
-**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data. Its test/build CI workflow now passes in GitHub Actions.
+**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The prototype uses fictional demo records and now routes AI requests through a FastAPI service with server-side credentials. Authentication, rate limits, and privacy review are still required before public use. Its test/build CI workflow now passes in GitHub Actions.
+
+## Additional project work
+
+### Enterprise Claims QA LLM Pipeline
+**Document question-answering and claims intelligence**
+
+An applied LLM workflow concept for extracting and answering questions over enterprise claims documents, using retrieval and grounded response generation.
+
+- **Technical areas:** Python, FastAPI, embeddings, FAISS / Pinecone, LoRA / QLoRA, Azure ML, AKS, Key Vault.
+- **Engineering focus:** document ingestion, retrieval quality, source-grounded answers, model adaptation, secure deployment, and latency/cost evaluation.
+- **Status:** Portfolio project experience; the public GradeFlow and Neurotrial repositories are separate implementations.
+
+### Vision-Based Retail Shrink Prevention
+**Edge AI and computer vision for retail operations**
+
+A proposed edge-intelligence platform for identifying potential retail shrink patterns by combining visual signals with contextual sensor data.
+
+- **Technical areas:** computer vision, edge AI, sensor fusion, behavioral analytics, event processing.
+- **Engineering focus:** low-latency inference, privacy-aware event design, false-positive reduction, and operational alert workflows.
+- **Status:** Architecture / project concept; not represented as a deployed customer system.
+
+### ML Inference Optimization
+**Efficient model serving and runtime performance**
+
+Applied model-serving and optimization work focused on improving inference efficiency for production-oriented ML workloads.
+
+- **Technical areas:** PyTorch, TensorRT, OpenVINO, quantization, dynamic batching, Docker, Kubernetes, AWS / Azure.
+- **Engineering focus:** latency profiling, throughput, memory utilization, deployment reliability, and reproducible benchmarking.
+- **Status:** Project / professional experience described in the portfolio; individual performance figures should be tied to a specific benchmark before publication.
+
+### Computer Vision and Time-Series ML
+**Applied machine-learning experiments**
+
+- **Face-mask detection:** MobileNetV2, TensorFlow, and OpenCV for image classification.
+- **Bitcoin price prediction:** recurrent neural network / LSTM experiments on historical time-series data.
+- **Engineering focus:** data preparation, model training, evaluation metrics, and experiment reproducibility.
 
 ## Technical toolkit
 
