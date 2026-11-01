@@ -32,7 +32,7 @@ A React + FastAPI application exploring instructor and student workflows around 
 - Student-facing views for grades, score breakdowns, and feedback.
 - A demo review flow that refuses to invent a grade when no submission evidence is attached.
 - A FastAPI backend with assignment list/create endpoints, SQLAlchemy models, PostgreSQL configuration, Alembic migrations, rubric validation, and pytest API tests.
-- React instructor dashboard integration for listing and creating persisted assignments.
+- React instructor dashboard integration, signed instructor/student sessions, role-based assignment access, and persisted student text submissions.
 - A standalone frontend rubric-score validation utility with unit tests for score bounds, duplicate criteria, and total-point consistency.
 - GitHub Actions frontend CI: tests and production build passing.
 - GitHub Actions backend CI: pytest API suite passing.
@@ -49,7 +49,7 @@ A React + FastAPI prototype for exploring how LLMs can help researchers inspect 
 - Failure analysis and hypothesis exploration.
 - Explicitly synthetic demonstration scenarios (not real clinical-trial evidence).
 - Data-provenance and research-integrity documentation.
-- A server-side FastAPI analysis gateway that reads Anthropic credentials from the backend environment; the browser no longer handles provider keys.
+- A server-side FastAPI analysis gateway that reads Anthropic credentials from the backend environment; the browser no longer handles provider keys. Added PDF/TXT/Markdown ingestion, persistent chunk storage, lexical retrieval, source citations, and a React source-library workspace.
 - Security documentation describing the remaining authentication, rate-limit, and privacy requirements.
 - Shared defensive JSON-object parsing for model responses.
 - Automated tests for malformed output, fenced JSON, missing inputs, provider errors, and content extraction.
