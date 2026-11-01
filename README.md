@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://charithapittala.github.io">Portfolio website</a> ·
+  <a href="https://charitha6969.github.io/charithapittala.github.io">Portfolio website</a> ·
   <a href="https://github.com/CHARITHA6969">GitHub</a> ·
   <a href="mailto:charitha696969@gmail.com">Email</a>
 </p>
