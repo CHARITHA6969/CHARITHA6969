@@ -120,8 +120,33 @@ Every event should preserve provenance and uncertainty. Missing sensor evidence 
 4. **Human-reviewed pilot:** evaluate alert quality, workload, reviewer agreement, and operational failure handling.
 5. **Controlled expansion:** proceed only after independent privacy, security, legal, and performance review.
 
+## Runnable prototype
+
+A small standard-library Python prototype implements a single-window event correlator using synthetic events:
+
+- Requires a vision observation and at least two distinct corroborating signal types.
+- Restricts correlation to one zone and a bounded time window.
+- Requires timezone-aware timestamps and validates confidence values.
+- Deduplicates identical event IDs and rejects conflicting payloads.
+- Produces a deterministic candidate ID and explicitly marks the result as requiring human review.
+- Does not infer intent, identify people, or label an event as theft.
+
+Run the example from the repository root:
+
+```bash
+python projects/retail_event_demo.py
+```
+
+Run its tests:
+
+```bash
+python -m unittest discover -s projects/tests -v
+```
+
+Implementation: [event correlator](retail_event_correlator.py) · [synthetic demo](retail_event_demo.py) · [unit tests](tests/test_retail_event_correlator.py) · [CI workflow](../.github/workflows/project-tests.yml).
+
 ## Current status and next implementation step
 
-This is an architecture case study, not a completed product. The next meaningful implementation slice would be a small event-correlation service with a versioned event schema, deterministic time-window rules, synthetic fixtures, and tests for duplicate, delayed, and missing sensor events.
+This is an architecture case study with a small synthetic event-correlation prototype, not a completed product. The next meaningful implementation slice would be an event-stream adapter and versioned event contract, followed by deterministic handling of delayed, missing, and out-of-order sensor events.
 
 That slice would make the design executable without requiring access to retail cameras or real customer data.
