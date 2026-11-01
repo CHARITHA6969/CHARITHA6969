@@ -1,68 +1,58 @@
-# Charitha Pittala
+<p align="center">
+  <img src="assets/charitha-profile-banner.svg" alt="Charitha Pittala — AI Engineering, ML Systems, Edge AI" width="100%">
+</p>
 
-**AI Engineer · ML Systems · Edge AI**
+<p align="center">
+  <a href="https://github.com/CHARITHA6969">GitHub</a> ·
+  <a href="mailto:charitha696969@gmail.com">Email</a>
+</p>
 
-I build AI-powered applications and ML systems across backend engineering, document intelligence, model serving, and edge computer vision.
+I build practical AI software across **LLM applications, machine learning systems, backend engineering, and Edge AI**. I’m interested in taking intelligent systems from prototypes to reliable products—with measurable performance, useful interfaces, and clear engineering trade-offs.
 
-My current work focuses on making AI systems practical: reliable APIs, evidence-grounded retrieval, measurable inference performance, and real-time perception at the edge.
+## What I'm building
 
-[GitHub](https://github.com/CHARITHA6969) · [Email](mailto:charitha696969@gmail.com)
-
----
-
-## Current work
-
-| Project | Focus | Stack |
+| Project | What it does | Core technologies |
 |---|---|---|
-| [GradeFlow](https://github.com/CHARITHA6969/gradeflow) | Full-stack assessment workflow with authenticated roles, assignment publishing, and persisted student submissions | React, FastAPI, SQLAlchemy, PostgreSQL, Alembic |
-| [Neurotrial](https://github.com/CHARITHA6969/neurotrial) | Clinical-trial document ingestion, retrieval, source-cited analysis, and server-side LLM integration | React, FastAPI, Python, Anthropic API, SQLAlchemy |
-| Vision-Based Retail Shrink Prevention | Edge perception and multimodal sensor-fusion architecture for retail operations | Computer Vision, Edge AI, TensorRT, OpenVINO, RFID, POS, sensor fusion |
-| Enterprise Claims QA | Retrieval-grounded question answering over enterprise claims documents | Python, RAG, FAISS, Pinecone, LoRA/QLoRA, Azure ML |
-| ML Inference Optimization | Runtime and model optimization for lower-latency inference | PyTorch, TensorRT, OpenVINO, quantization, Kubernetes |
+| [**GradeFlow**](https://github.com/CHARITHA6969/gradeflow) | Full-stack assessment workflow with instructor/student roles, assignment publishing, and persistent submissions | React · Python · FastAPI · SQLAlchemy · PostgreSQL |
+| [**Neurotrial**](https://github.com/CHARITHA6969/neurotrial) | Research-document ingestion, source retrieval, and citation-oriented clinical-trial analysis | React · FastAPI · Python · LLMs · SQLAlchemy |
+| **Vision-Based Retail Shrink Prevention** | Edge perception and sensor-fusion architecture for retail operations | Computer Vision · Edge AI · TensorRT · OpenVINO · RFID · POS |
+| **Enterprise Claims QA** | Retrieval-grounded question answering over claims documents | Python · RAG · FAISS · Pinecone · Azure ML |
+| **ML Inference Optimization** | Model/runtime optimization and performance-focused serving | PyTorch · TensorRT · OpenVINO · Quantization · Kubernetes |
 
-## Engineering focus
+## Focus areas
 
-**AI & retrieval**  
-LLM applications · RAG · embeddings · document parsing · source citations · evaluation · human-in-the-loop workflows
+- **AI & retrieval:** LLM applications, RAG, document intelligence, embeddings, source citations, evaluation.
+- **ML systems:** PyTorch, TensorFlow, model optimization, quantization, inference profiling and serving.
+- **Edge AI:** Real-time computer vision, object detection, tracking, sensor fusion, event-driven edge-to-cloud systems.
+- **Backend engineering:** Python, FastAPI, REST APIs, PostgreSQL, SQLAlchemy, asynchronous workflows.
+- **Cloud & delivery:** AWS, Azure, Docker, Kubernetes, Terraform, CI/CD.
 
-**ML systems & Edge AI**  
-Computer vision · object detection · multi-object tracking · sensor fusion · edge inference · quantization · inference profiling
+## Selected engineering work
 
-**Backend & data**  
-Python · FastAPI · REST APIs · SQL · PostgreSQL · SQLAlchemy · Alembic · asynchronous workflows
+### Edge AI · Vision-Based Retail Shrink Prevention
 
-**Cloud & delivery**  
-AWS · Azure · Docker · Kubernetes · Terraform · GitHub Actions · CI/CD
+Designing an edge-based perception architecture that processes RGB/depth camera streams close to their source, detects product and activity events, and correlates visual information with shelf/weight sensors, RFID, POS, and entry/exit signals.
 
-## Selected technical work
+The design emphasizes low-latency inference, hardware-aware model optimization, timestamp-aligned sensor fusion, false-positive measurement, privacy-aware event processing, and human-reviewed alerts.
 
-### Edge AI — Vision-Based Retail Shrink Prevention
+*Status: architecture/project concept—not a deployed or field-validated retail system.*
 
-Architecture for a retail perception platform that processes RGB/depth camera streams near their source, extracts events using computer vision, and correlates them with shelf/weight sensors, RFID, POS, and entry/exit signals.
+### GradeFlow · Full-stack product engineering
 
-The design emphasizes:
-- Low-latency, on-device inference and hardware-aware model optimization.
-- Object detection, tracking, activity recognition, and product movement context.
-- Timestamp alignment and confidence-aware multimodal sensor fusion.
-- Event-driven alerts and an incident dashboard for human review.
-- Privacy-aware processing, data minimization, and false-positive measurement.
+A React + FastAPI application with signed instructor/student sessions, role-protected assignment APIs, assignment publishing, and persistent text submissions. SQLAlchemy models and Alembic migrations provide the database foundation. Frontend and backend CI workflows exercise the implemented paths.
 
-*Status: architecture/project concept; not represented as a deployed or validated retail system.*
+### Neurotrial · Document intelligence
 
-### GradeFlow — Full-stack assessment workflow
+A React + FastAPI research prototype with PDF/TXT/Markdown ingestion, persistent document chunks, lexical retrieval, and source/chunk citation metadata. Anthropic credentials are held server-side. The current retrieval baseline is lexical; embedding-based retrieval and reranking are future work.
 
-A React and FastAPI application with instructor/student roles, assignment publishing, persistent text submissions, rubric validation, and PostgreSQL-ready migrations. Backend and frontend CI workflows test the implemented workflows.
+## How I work
 
-### Neurotrial — Source-grounded research assistant
-
-A React and FastAPI prototype with PDF/TXT/Markdown ingestion, persistent text chunks, lexical retrieval, and answer responses accompanied by source/chunk citation metadata. Anthropic credentials remain server-side. Retrieval is currently lexical rather than embedding-based.
-
-## Project notes
-
-Some portfolio items describe architecture or professional project experience rather than independently deployed public applications. Performance figures should be read with their associated benchmark context; proposed architectures are labelled as concepts.
+I value small, verifiable increments; readable APIs; tests and automation; documented assumptions; responsible use of AI; and performance claims backed by reproducible measurements.
 
 ## Connect
 
-[GitHub](https://github.com/CHARITHA6969) · [Email](mailto:charitha696969@gmail.com)
+[GitHub · @CHARITHA6969](https://github.com/CHARITHA6969) · [charitha696969@gmail.com](mailto:charitha696969@gmail.com)
 
-*Building useful AI systems with sound engineering, measurable performance, and clear evidence.*
+<p align="center">
+  <sub>Building useful AI systems with sound engineering and measurable outcomes.</sub>
+</p>
