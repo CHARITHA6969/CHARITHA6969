@@ -26,15 +26,16 @@ My current interests are LLM-powered applications, retrieval-augmented generatio
 ### [GradeFlow](https://github.com/CHARITHA6969/gradeflow)
 **AI-assisted assessment and grading workflow prototype**
 
-A React application exploring instructor and student workflows around assignments, rubric-based assessment, submission review, and feedback.
+A React + FastAPI application exploring instructor and student workflows around assignments, rubric-based assessment, submission review, and feedback.
 
 - Instructor-facing dashboard concepts for assignments, rubric criteria, and submission review.
 - Student-facing views for grades, score breakdowns, and feedback.
 - A demo review flow that refuses to invent a grade when no submission evidence is attached.
-- A standalone rubric-score validation utility with unit tests for score bounds, duplicate criteria, and total-point consistency.
+- A FastAPI backend with health and rubric-validation endpoints, Pydantic request/response models, and pytest API tests.
+- A standalone frontend rubric-score validation utility with unit tests for score bounds, duplicate criteria, and total-point consistency.
 - GitHub Actions CI configured to run tests and a production build.
 
-**Engineering focus:** React component design, rubric validation, evidence-first review behavior, unit testing, and CI. The app remains a frontend prototype without real authentication, persistent submissions, or a grading backend.
+**Engineering focus:** React component design, rubric validation, evidence-first review behavior, unit testing, and CI. The backend is an early foundation without authentication, database persistence, or AI grading; the review interface remains a demo.
 
 ### [Neurotrial](https://github.com/CHARITHA6969/neurotrial)
 **Neuroscience clinical-trial intelligence interface**
@@ -47,9 +48,11 @@ A React prototype for exploring how LLMs can help researchers inspect and reason
 - Explicitly synthetic demonstration scenarios (not real clinical-trial evidence).
 - Data-provenance and research-integrity documentation.
 - Security documentation describing why browser-side API keys are unsuitable for production.
-- More defensive provider response and request validation.
+- Shared defensive JSON-object parsing for model responses.
+- Automated tests for malformed output, fenced JSON, missing inputs, provider errors, and content extraction.
+- GitHub Actions CI configured to run tests and a production build..
 
-**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data.
+**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data. Its test/build CI workflow is configured but still needs a successful run to verify.
 
 ## Technical toolkit
 
