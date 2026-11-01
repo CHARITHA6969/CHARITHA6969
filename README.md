@@ -3,13 +3,14 @@
 </p>
 
 <p align="center">
+  <a href="https://charithapittala.github.io">Portfolio website</a> ·
   <a href="https://github.com/CHARITHA6969">GitHub</a> ·
   <a href="mailto:charitha696969@gmail.com">Email</a>
 </p>
 
 I build practical AI software across **LLM applications, machine learning systems, backend engineering, and Edge AI**. I’m interested in taking intelligent systems from prototypes to reliable products—with measurable performance, useful interfaces, and clear engineering trade-offs.
 
-## What I'm building
+## Current work
 
 | Project | What it does | Core technologies |
 |---|---|---|
@@ -45,7 +46,7 @@ A React + FastAPI application with signed instructor/student sessions, role-prot
 
 A React + FastAPI research prototype with PDF/TXT/Markdown ingestion, persistent document chunks, lexical retrieval, and source/chunk citation metadata. Anthropic credentials are held server-side. The current retrieval baseline is lexical; embedding-based retrieval and reranking are future work.
 
-## How I work
+## Engineering approach
 
 I value small, verifiable increments; readable APIs; tests and automation; documented assumptions; responsible use of AI; and performance claims backed by reproducible measurements.
 
