@@ -65,6 +65,7 @@ A React + FastAPI prototype for exploring how LLMs can help researchers inspect 
 An applied LLM workflow concept for extracting and answering questions over enterprise claims documents, using retrieval and grounded response generation.
 
 - **Technical areas:** Python, FastAPI, embeddings, FAISS / Pinecone, LoRA / QLoRA, Azure ML, AKS, Key Vault.
+- **Reported project outcomes:** approximately 40% lower inference latency and 30% lower serving cost in the described implementation; benchmark methodology should accompany these figures in a technical case study.
 - **Engineering focus:** document ingestion, retrieval quality, source-grounded answers, model adaptation, secure deployment, and latency/cost evaluation.
 - **Status:** Portfolio project experience; the public GradeFlow and Neurotrial repositories are separate implementations.
 
@@ -77,14 +78,15 @@ A proposed edge-intelligence platform for identifying potential retail shrink pa
 - **Engineering focus:** low-latency inference, privacy-aware event design, false-positive reduction, and operational alert workflows.
 - **Status:** Architecture / project concept; not represented as a deployed customer system.
 
-### ML Inference Optimization
+### Second Nature Brands — ML Inference Optimization
 **Efficient model serving and runtime performance**
 
 Applied model-serving and optimization work focused on improving inference efficiency for production-oriented ML workloads.
 
 - **Technical areas:** PyTorch, TensorRT, OpenVINO, quantization, dynamic batching, Docker, Kubernetes, AWS / Azure.
+- **Reported project outcome:** approximately 40% inference-latency reduction using quantization and TensorRT.
 - **Engineering focus:** latency profiling, throughput, memory utilization, deployment reliability, and reproducible benchmarking.
-- **Status:** Project / professional experience described in the portfolio; individual performance figures should be tied to a specific benchmark before publication.
+- **Status:** Project / professional experience described in the portfolio; include benchmark hardware, model, workload, and baseline when presenting the metric.
 
 ### Computer Vision and Time-Series ML
 **Applied machine-learning experiments**
