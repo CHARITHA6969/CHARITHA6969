@@ -31,7 +31,7 @@ A React + FastAPI application exploring instructor and student workflows around 
 - Instructor-facing dashboard concepts for assignments, rubric criteria, and submission review.
 - Student-facing views for grades, score breakdowns, and feedback.
 - A demo review flow that refuses to invent a grade when no submission evidence is attached.
-- A FastAPI backend with assignment CRUD foundations, SQLAlchemy models, PostgreSQL configuration, Alembic migrations, rubric validation, and pytest API tests.
+- A FastAPI backend with assignment list/create endpoints, SQLAlchemy models, PostgreSQL configuration, Alembic migrations, rubric validation, and pytest API tests.
 - React instructor dashboard integration for listing and creating persisted assignments.
 - A standalone frontend rubric-score validation utility with unit tests for score bounds, duplicate criteria, and total-point consistency.
 - GitHub Actions frontend CI: tests and production build passing.
