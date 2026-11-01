@@ -33,7 +33,8 @@ A React + FastAPI application exploring instructor and student workflows around 
 - A demo review flow that refuses to invent a grade when no submission evidence is attached.
 - A FastAPI backend with health and rubric-validation endpoints, Pydantic request/response models, and pytest API tests.
 - A standalone frontend rubric-score validation utility with unit tests for score bounds, duplicate criteria, and total-point consistency.
-- GitHub Actions CI configured to run tests and a production build.
+- GitHub Actions frontend CI: tests and production build passing.
+- GitHub Actions backend CI: pytest API suite passing.
 
 **Engineering focus:** React component design, rubric validation, evidence-first review behavior, unit testing, and CI. The backend is an early foundation without authentication, database persistence, or AI grading; the review interface remains a demo.
 
@@ -50,9 +51,9 @@ A React prototype for exploring how LLMs can help researchers inspect and reason
 - Security documentation describing why browser-side API keys are unsuitable for production.
 - Shared defensive JSON-object parsing for model responses.
 - Automated tests for malformed output, fenced JSON, missing inputs, provider errors, and content extraction.
-- GitHub Actions CI configured to run tests and a production build..
+- GitHub Actions CI: JSON parsing/provider tests and production build passing..
 
-**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data. Its test/build CI workflow is configured but still needs a successful run to verify.
+**Engineering focus:** structured LLM workflows, research-data provenance, source verification, defensive API handling, and scientific caution. The current prototype uses fictional demo records and still calls the provider from the browser; it must not be used with sensitive data. Its test/build CI workflow now passes in GitHub Actions.
 
 ## Technical toolkit
 
